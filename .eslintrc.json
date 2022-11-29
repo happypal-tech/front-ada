@@ -1,0 +1,136 @@
+{
+  "root": true,
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "unused-imports",
+    "promise",
+    "react",
+    "react-hooks"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:promise/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended"
+      ],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {},
+          {
+            "usePrettierrc": true
+          }
+        ],
+        "import/no-deprecated": "error",
+        "import/no-mutable-exports": "error",
+        "import/first": "error",
+        "import/order": [
+          "error",
+          {
+            "newlines-between": "always",
+            "groups": ["builtin", "external", "internal", "parent", "sibling"],
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            }
+          }
+        ],
+        "import/newline-after-import": "error",
+        "import/no-anonymous-default-export": "error",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "varsIgnorePattern": "^_",
+            "args": "after-used",
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "react/self-closing-comp": "error",
+        "react/boolean-prop-naming": "error",
+        "react/function-component-definition": [
+          "error",
+          {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+          }
+        ],
+        "react/hook-use-state": "error",
+        "react/no-children-prop": "error",
+        "react/no-find-dom-node": "error",
+        "react/no-invalid-html-attribute": "error",
+        "react/no-is-mounted": "error",
+        "react/no-namespace": "error",
+        "react/no-render-return-value": "error",
+        "react/no-string-refs": "error",
+        "react/no-this-in-sfc": "error",
+        "react/no-unknown-property": "error",
+        "react/style-prop-object": "error",
+        "react/void-dom-elements-no-children": "error",
+        "react/jsx-no-target-blank": "error",
+        "react/jsx-no-useless-fragment": "error",
+        "react/jsx-pascal-case": "error"
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "plugins": ["jest", "jest-extended"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-extended/all",
+        "plugin:jest/style",
+        "plugin:jest-formatting/strict"
+      ],
+      "env": {
+        "jest": true
+      },
+      "rules": {}
+    },
+    {
+      "files": ["*.gql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "extends": "plugin:@graphql-eslint/operations-recommended",
+      "parserOptions": {
+        "operations": "./{apps,libs}/**/*.gql"
+      },
+      "rules": {
+        "prettier/prettier": "error"
+      }
+    },
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
+      "rules": {}
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "formComponents": [
+      { "name": "Form" }
+    ],
+    "linkComponents": [
+      { "name": "Link", "linkAttribute": "to" }
+    ],
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json"]
+      },
+      "node": {
+        "project": ["tsconfig.json"]
+      }
+    }
+  }
+}
