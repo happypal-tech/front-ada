@@ -1,46 +1,11 @@
-# Getting Started with Create React App
+## Présentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Une unité spéciale de l'Anomaly Detection Agency (ADA) débarque dans votre bureau en fracturant violement votre porte d'entrée et le chef des opérations vous ordonne de réaliser un formulaire qui permettra de recenser toutes les anomalies organiques présentes dans le multivers qui pourrait menacer la Terre.
 
-## Available Scripts
+Pour vous aider dans votre tâche, le chef des opérations vous met à votre disposition l'un de ses meilleurs agents développeur web et vous précise que vous avez une heure pour faire le maximum. L'unité spéciale repart aussi vite qu'elle est venue sans attendre la moindre approbation de votre part.
 
-In the project directory, you can run:
+Il ne reste plus que vous et l'agent qui vous donne plus de détails sur la mission :
+- Création d'un formulaire en mode TODO list qui ira chercher les différentes anomalies dans l'api https://rickandmortyapi.com/
+- Création d'une page qui liste toutes les anomalies sélectionnées de façon liste de courses
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Détails importants : pendant cette heure, l'ADA peut revenir, à tout moment, récupérer son agent pour un besoin urgent durant 5/10 minutes. En contrepartie, vous pouvez demander à l'agent de consommer un composant chimique qui a la capacité de courber l'espace-temps afin qu'une fonctionnalité choisie soit réalisée et considérée comme finie. 
