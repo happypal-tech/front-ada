@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Home', to: '/', current: true },
-  { name: 'About', to: '/about', current: false },
+  { name: 'Home', to: '/' },
+  { name: 'About', to: '/about' },
 ];
 
 export const AppHeader = () => {
